@@ -15,7 +15,7 @@ const recentWorks = [
     title: "Tours and Travel",
     description: "Professional tours and travel booking website.",
     techs: ["MERN", "JWT", "JS", "CSS"],
-    img: "/images/tourstravel.png",
+    img: "/images/Tourstravel.png",
   },
 ];
 const parent = document.getElementById("recent-works");
@@ -35,11 +35,17 @@ const html = recentWorks.map(
   (work) =>
     `<div class="bg-white border border-gray-200 rounded-lg dark:bg-gray-800 dark:border-gray-700 flex flex-col justify-between">
         <div>
-            <img class="rounded-t-lg w-full" src=${work.img} alt=${work.title} />
+            <img class="rounded-t-lg w-full" src=${work.img} alt=${
+      work.title
+    } />
         </div>
         <div class="p-3 flex-grow border-t border-gray-100 dark:border-gray-600">
-            <h5 class="text-xl font-semibold text-gray-900 dark:text-gray-200">${work.title}</h5>
-            <p class="font-light text-gray-800 dark:text-gray-400">${work.description}</p>
+            <h5 class="text-xl font-semibold text-gray-900 dark:text-gray-200">${
+              work.title
+            }</h5>
+            <p class="font-light text-gray-800 dark:text-gray-400">${
+              work.description
+            }</p>
             <div class="my-4 flex flex-wrap">
                 ${getTech(work.techs)}
             </div>
